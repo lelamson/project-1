@@ -1,1 +1,1 @@
-# week1-project-1
+# week1/project-1
