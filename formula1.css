@@ -1,0 +1,27 @@
+header {
+  color: #f00003;
+  background: #000000;
+  font-size: 64pt;
+  font-family: "Helvetica";
+}
+
+#sectionOne {
+  color: #ffffff;
+  background-color: #000ce0;
+}
+
+
+#sectionTwo{
+  color: #ffffff;
+  background-color: #e00000;
+}
+
+#p1{
+  font-size: 12px;
+  font-family: Verdana;
+}
+
+#p2{
+  font-size: 16px;
+  font-family: Impact;
+}
