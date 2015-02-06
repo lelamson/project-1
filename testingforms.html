@@ -1,6 +1,7 @@
 <!DOCTYPE>
 <html>
 <head>
+  <link rel="stylesheet" href="testingforms.css">
 </head>
 <header>
   <title>FORM</title>
@@ -8,6 +9,8 @@
 </header>
 
 <body>
+
+  <section id="userName" class="userNames">
   <p>
     <label>First Name:
     <input type="text" name="name" size="100" maxlength="500" />
@@ -18,7 +21,9 @@
     </label>
   </br>
   </p>
+  </section>
 
+  <section id="userColor" class="userColors">
   <p>
     Which color(s) do you like?
   </br>
@@ -34,16 +39,41 @@
     <input type="checkbox" name="color" value="Blue" />
     </label>
   </p>
-    <textarea name="history" form="user" rows="10" cols="100">Tell us why your here.</textarea>
+  </section>
+  </br>
+  <section id="userComment" class="userComments">
   <p>
-
-
+    <textarea name="history" form="user" rows="10" cols="100">Tell us why your here.</textarea>
   </p>
+  </section>
+
+  <section>
+  <p>
+    <ul>
+      <li>First Name & Last Name</li>
+      <li>Color</li>
+      <li>Comments</li>
+    </ul>
+  </p>
+</section>
+
+  <script>
+    var checklist = document.querySelectorAll("li");
+    var sectionlist = document.getElementsByTagName("section");
+
+    alert('changing')
+    for (var i = 0; i < checklist.length; i++){
+      checklist[i].className = "highlighted";
+      sectionlist[i].className = "highlighted";
+      alert("next");
+    }
+
+  </script>
 
 </body>
 <footer>
 
-  <input type="submit" value="Submit">
+  <button type="button">Submission</button>
 </footer>
 
 </html>

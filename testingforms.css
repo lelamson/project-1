@@ -1,0 +1,40 @@
+body {
+  font-family: courier;
+}
+
+.userNames {
+  color: #FF0000;
+}
+
+.userFirstNames {
+  color: #FF0000;
+}
+
+.userLastNames {
+  color: #FF0000;
+}
+
+.userColors {
+  color: #FFFFFF;
+  background-color: #00CC00;
+  display:inline-block;
+}
+
+.userComments {
+  color: #0000FF;
+  background-color: #0000FF;
+  vertical-align:middle;
+  display:inline-block;
+}
+
+.updateList {
+  color: #FF9900;
+}
+
+.trollStuffChanged {
+  color: #FF00FF;
+}
+
+.highlighted {
+  background-color: #FF9900;
+}
