@@ -10,63 +10,101 @@
 
 <body>
 
-  <section id="userName" class="userNames">
-  <p>
-    <label>First Name:
-    <input type="text" name="name" size="100" maxlength="500" />
-    </label>
+    <section id="firstName" class="firstNames">
+      <label>First Name:
+      <input type="text" name="name" size="100" maxlength="500" />
+      </label>
+    </section>
+    <section id="lastName" class="lastNames">
+      <label>Last Name:
+      <input type="text" name="name" size="100" maxlength="500" />
+      </label>
+    </section>
   </br>
-    <label>Last Name:
-    <input type="text" name="name" size="100" maxlength="500" />
-    </label>
-  </br>
-  </p>
-  </section>
 
   <section id="userColor" class="userColors">
-  <p>
-    Which color(s) do you like?
-  </br>
-    <label>Red
-    <input type="checkbox" name="color" value="Red" />
-    </label>
-  </br>
-    <label>White
-    <input type="checkbox" name="color" value="White" />
-    </label>
-  </br>
-    <label>Blue
-    <input type="checkbox" name="color" value="Blue" />
-    </label>
-  </p>
+    <p>
+      Which color(s) do you like?
+    </br>
+      <label>Red
+      <input type="checkbox" name="color" value="Red" />
+      </label>
+    </br>
+      <label>White
+      <input type="checkbox" name="color" value="White" />
+      </label>
+    </br>
+      <label>Blue
+      <input type="checkbox" name="color" value="Blue" />
+      </label>
+    </p>
   </section>
-  </br>
-  <section id="userComment" class="userComments">
-  <p>
-    <textarea name="history" form="user" rows="10" cols="100">Tell us why your here.</textarea>
-  </p>
+    </br>
+    <section id="userComment" class="userComments">
+    <p>
+      <textarea name="history" form="user" rows="10" cols="100">Tell us why your here.</textarea>
+    </p>
   </section>
 
   <section>
-  <p>
-    <ul>
-      <li>First Name & Last Name</li>
-      <li>Color</li>
-      <li>Comments</li>
-    </ul>
-  </p>
-</section>
+    <p>
+      <ul>
+        <li id="firstName">First Name</li>
+        <li id="lastName">Last Name</li>
+        <li id="userColor">Color</li>
+        <li id="userComment">Comments</li>
+      </ul>
+    </p>
+  </section>
 
   <script>
+
     var checklist = document.querySelectorAll("li");
     var sectionlist = document.getElementsByTagName("section");
+    var coolid = document.getElementsByClassName("userColors");
+    alert('test');
 
-    alert('changing')
     for (var i = 0; i < checklist.length; i++){
       checklist[i].className = "highlighted";
       sectionlist[i].className = "highlighted";
       alert("next");
     }
+
+    // for (var i = 0; i<coolid.length; i++){
+    //   coolid[i].className = "highlighted";
+    //   alert('next');
+    // }
+    // alert('changing')
+
+    var elfirstName = document.getElementById("firstName");
+    var ellastName = document.getElementById("lastName");
+    var elcolor = document.getElementById("userColor");
+    var elcomment = document.getElementById("userComment");
+
+    // ellastName.addEventListener('input',highlighting,false);
+    // alert('cool');
+    // coolid[0].className = "highlighted";
+    // coolid[1].className = "highlighted";
+
+
+    function highlighting(e){
+      // var target = e.target;
+
+      e.className = "highlighted";
+      // sectionlist[e].className = "highlighted";
+    }
+
+
+    // window.addEventListener('input', highlighting, false);
+
+    // function setup(){
+    //   var textInput;
+    //   textInput = document.getElementById("firstName");
+    //   textInput.focus();
+    // }
+
+    // window.addEventListener('input', setup, false);
+
 
   </script>
 

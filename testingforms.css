@@ -17,6 +17,7 @@ body {
 .userColors {
   color: #FFFFFF;
   background-color: #00CC00;
+  vertical-align: middle;
   display:inline-block;
 }
 
@@ -27,12 +28,8 @@ body {
   display:inline-block;
 }
 
-.updateList {
-  color: #FF9900;
-}
+.unhighlighted {
 
-.trollStuffChanged {
-  color: #FF00FF;
 }
 
 .highlighted {
